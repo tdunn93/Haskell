@@ -1,4 +1,4 @@
-##Simple HTML document parser in Haskell##
+# Simple HTML document parser in Haskell
 
 Takes two files as input one containing the page contents and a template file to build around.
 
