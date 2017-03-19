@@ -35,7 +35,7 @@ pairElem (x : xs) (y : ys)
   | (fst x) == "79" = zip (words . fst $ x) (words "E") ++ pairElem xs ys
   | (fst x) == "34" = zip (words . fst $ x) (words "R") ++ pairElem xs ys
   -- if the freq is less than 4 then just sub original cipherletter
-  | (snd x) < 0  = zip (words . fst $ x) (words $ (fst $ x) ++ "") ++ pairElem xs ys
+  | (snd x) < 4  = zip (words . fst $ x) (words $ (fst $ x) ++ "") ++ pairElem xs ys
   | otherwise  = zip (words . fst $ x) (words y) ++ pairElem xs ys
 
 lookUp :: [(String, String)] -> String -> String
